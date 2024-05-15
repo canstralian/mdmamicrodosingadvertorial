@@ -3,27 +3,41 @@ html {
   height: 100%;
   padding: 2%;
 }
-  
+
 body {
   font-family: Arial, sans-serif;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 1200px;
   margin: auto;
 }
 
 .main-content {
-  flex: 80%;
+  flex: 1;
   padding: 20px;
 }
 
 .sidebar {
-  flex: 20%;
+  flex: 1;
   padding: 20px;
   background-color: #f4f4f4;
   border-left: 2px solid #ddd;
+}
+
+.video-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  width: 80%;
+  height: 400px;
 }
 
 h2 {
@@ -80,7 +94,7 @@ nav.sticky-nav li a {
 }
 
 nav.sticky-nav li a:hover {
-  background-color: #ddd;
+  background-color: #66067a;
   color: black;
 }
 
